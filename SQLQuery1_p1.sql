@@ -1,5 +1,4 @@
---SQL retailr Sales Analysis - P1 
-CREATE DATABASE sql_project_p2
+--SQL retails Sales Analysis - P1 
 
 --Create a Table
 DROP TABLE retails_sales IF EXISTS 
@@ -83,8 +82,7 @@ SELECT *
 FROM [dbo].[Retail Sales ]
 WHERE [sale_date] = '2022-11-05'
 
--- Q.2 Write a SQL query to retrieve all transactions where the category is 'Clothing' 
--- and the quantity sold is more than 10 in the month of Nov-2022
+-- Q.2 Write a SQL query to retrieve all transactions where the category is 'Clothing' and the quantity sold is more than 10 in the month of Nov-2022
 SELECT 
     *
 FROM [dbo].[Retail Sales ]
@@ -118,8 +116,7 @@ WHERE [category] = 'Beauty'
 SELECT * FROM [dbo].[Retail Sales ] 
 WHERE [total_sale]> 1000
 
--- Q.6 Write a SQL query to find the total number of transactions (transaction_id) 
--- made by each gender in each category.
+-- Q.6 Write a SQL query to find the total number of transactions (transaction_id)  made by each gender in each category.
 
 SELECT 
      [category]
@@ -186,6 +183,7 @@ GROUP BY
     END;
 
 --End of Project
+
 
 
 
